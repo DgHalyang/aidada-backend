@@ -3,6 +3,12 @@
 # @from <a href="https://yupi.icu">编程导航知识星球</a>
 server:
   port: 8101
+  servlet:
+    session:
+      cookie:
+        # 解决跨域
+        same-site: none
+        secure: true
 spring:
   # 数据库配置
   # todo 需替换配置
